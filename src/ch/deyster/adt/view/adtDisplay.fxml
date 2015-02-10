@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="700.0" maxWidth="300.0" minHeight="700.0" minWidth="300.0" prefHeight="700.0" prefWidth="300.0" stylesheets="@DarkTheme.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ch.deyster.adt.view.ADTDisplayController">
+   <children>
+      <AnchorPane layoutX="115.0" layoutY="55.0" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="150.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <TableView fx:id="listTable" prefHeight="500.0" prefWidth="400.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+              <columns>
+                <TableColumn fx:id="indexColumn" prefWidth="150.0" resizable="false" text="Index" />
+                <TableColumn fx:id="valueColumn" prefWidth="150.0" text="Value" />
+              </columns>
+            </TableView>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="79.0" layoutY="437.0" prefHeight="200.0" prefWidth="200.0" styleClass="background" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="540.0">
+         <children>
+            <HBox layoutX="57.0" layoutY="122.0" spacing="5.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="110.0">
+               <children>
+                  <Button mnemonicParsing="false" prefHeight="100.0" prefWidth="148.0" text="Clear" />
+                  <Button mnemonicParsing="false" prefHeight="100.0" prefWidth="148.0" text="Close" />
+               </children>
+            </HBox>
+            <HBox layoutX="58.0" layoutY="-1.0" spacing="5.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <Button mnemonicParsing="false" onAction="#testModify" prefHeight="50.0" prefWidth="148.0" text="Add..." />
+                  <Button mnemonicParsing="false" prefHeight="50.0" prefWidth="148.0" text="Frequency" />
+               </children>
+            </HBox>
+            <HBox layoutX="36.0" layoutY="55.0" spacing="5.0" AnchorPane.bottomAnchor="55.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="55.0">
+               <children>
+                  <Button mnemonicParsing="false" prefHeight="100.0" prefWidth="148.0" text="Remove..." />
+                  <Button mnemonicParsing="false" prefHeight="100.0" prefWidth="148.0" text="Replace" />
+               </children>
+            </HBox>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
