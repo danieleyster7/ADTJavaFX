@@ -46,7 +46,7 @@ public class ADTDisplayController
 	@FXML
 	public void handleAdd()
 	{
-		
+		main.showAddItemDialog();
 	}
 	
 	@FXML
