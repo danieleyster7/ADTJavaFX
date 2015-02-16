@@ -44,10 +44,37 @@ public class ADTDisplayController
 	}
 	
 	@FXML
-	public void testModify()
+	public void handleAdd()
 	{
-		TestObject current = listTable.getSelectionModel().getSelectedItem();
-		current.setValue(100);
+		
+	}
+	
+	@FXML
+	public void handleRemove()
+	{
+		
+	}
+	
+	@FXML
+	public void handleRemoveAny() {
+		main.removeAny();
+	}
+	
+	@FXML
+	public void handleClear(){
+		main.clearData();
+	}
+	
+	@FXML
+	public void handleFrequency()
+	{
+		
+	}
+	
+	@FXML
+	public void handleReplace()
+	{
+		
 	}
 }
 

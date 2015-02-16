@@ -22,20 +22,20 @@
          <children>
             <HBox layoutX="57.0" layoutY="122.0" spacing="5.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="110.0">
                <children>
-                  <Button mnemonicParsing="false" prefHeight="100.0" prefWidth="148.0" text="Clear" />
-                  <Button mnemonicParsing="false" prefHeight="100.0" prefWidth="148.0" text="Close" />
+                  <Button mnemonicParsing="false" onAction="#handleClear" prefHeight="100.0" prefWidth="148.0" text="Clear" />
+                  <Button mnemonicParsing="false" prefHeight="100.0" prefWidth="148.0" text="Frequency of..." />
                </children>
             </HBox>
-            <HBox layoutX="58.0" layoutY="-1.0" spacing="5.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <HBox layoutX="58.0" layoutY="-1.0" spacing="5.0" AnchorPane.bottomAnchor="110.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                <children>
-                  <Button mnemonicParsing="false" onAction="#testModify" prefHeight="50.0" prefWidth="148.0" text="Add..." />
-                  <Button mnemonicParsing="false" prefHeight="50.0" prefWidth="148.0" text="Frequency" />
+                  <Button mnemonicParsing="false" prefHeight="50.0" prefWidth="148.0" text="Add..." />
+                  <Button mnemonicParsing="false" prefHeight="50.0" prefWidth="148.0" text="Replace" />
                </children>
             </HBox>
             <HBox layoutX="36.0" layoutY="55.0" spacing="5.0" AnchorPane.bottomAnchor="55.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="55.0">
                <children>
                   <Button mnemonicParsing="false" prefHeight="100.0" prefWidth="148.0" text="Remove..." />
-                  <Button mnemonicParsing="false" prefHeight="100.0" prefWidth="148.0" text="Replace" />
+                  <Button mnemonicParsing="false" onAction="#handleRemoveAny" prefHeight="100.0" prefWidth="148.0" text="Remove Any" />
                </children>
             </HBox>
          </children>

@@ -2,6 +2,7 @@ package ch.deyster.adt;
 
 import java.io.IOException;
 
+import ch.deyster.adt.model.ArrayList;
 import ch.deyster.adt.model.TestObject;
 import ch.deyster.adt.view.ADTDisplayController;
 import javafx.application.Application;
@@ -19,7 +20,7 @@ public class Main extends Application
 {
 	private Stage primaryStage;
 	private BorderPane rootLayout;
-	
+	private ArrayList<TestObject> adtList;
 	private ObservableList<TestObject> data = FXCollections.observableArrayList();
 	
 	public void start(Stage primaryStage) 
@@ -75,13 +76,34 @@ public class Main extends Application
 	}
 	
 	public Main() {
-		data.add(new TestObject(1));
-		data.add(new TestObject(2));
-		
+		adtList = new ArrayList<TestObject>();
+		adtList.add(new TestObject(100));
+		adtList.add(new TestObject(200));
+		updateData();
+	}
+	
+	private void updateData()
+	{
+		data.clear();
+		for(int i = 0; i < adtList.getLength(); i++)
+			data.add(adtList.get(i));
 	}
 
 	public static void main(String[] args) 
 	{
 		launch(args);
+	}
+	
+	public void clearData()
+	{
+		adtList.clear();
+		data.clear();
+	}
+	
+	public void removeAny()
+	{
+		adtList.remove();
+		updateData();
+		
 	}
 }
